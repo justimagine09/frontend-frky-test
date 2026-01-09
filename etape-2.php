@@ -31,7 +31,8 @@ else if (CHOICE == 6) {
 }
 else {};
 
-$page_suivante = "/faites-le-plein.php";
+$page_suivante = "faites-le-plein.php";
+$page_suivante6 = "faites-le-plein6.php";
 
 include("includes/contact-variables.php");
 $contact = getContactVariables('fr');
@@ -231,6 +232,7 @@ $contact = getContactVariables('fr');
                                         <div class="user-cont">
                                             <form action="/bl_form.php" id="form_paiement" method="post" name="form_paiement">
                                                 <input name="bl_url_conf" id="bl_url_conf" type="hidden" value="<?=$page_suivante?>">
+                                                <input name="bl_url_conf6" id="bl_url_conf6" type="hidden" value="<?=$page_suivante6?>">
                                                 <input name="bl_url_err" id="bl_url_err" type="hidden" value="<?= $_SERVER["REQUEST_URI"]?>">
                                                 <input name="bl_refprix[]" type="hidden" value="<?= $refPriceActive ?>">
                                                 <input name="bl_methode" id="bl_methode" type="hidden" value="cb">
@@ -323,7 +325,12 @@ $contact = getContactVariables('fr');
     <script src="assets/js/timer-checkout.js"></script>
     <script>
         function goToNextPage() {
-            window.location.href = $("#bl_url_conf").val();
+            const quantity = $('.choose-price.active').data('quantity');
+            if(quantity === 6) {
+                window.location.href = $("#bl_url_conf6").val();
+            } else {
+                window.location.href = $("#bl_url_conf").val();
+            }
         }
     </script>
 

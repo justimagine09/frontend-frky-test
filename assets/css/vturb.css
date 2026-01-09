@@ -161,6 +161,25 @@
                 from { transform: scale(1); }
                 to   { transform: scale(1.05); }
             }
+            
+#open-product-composition-modal .modal-content {
+    position: relative;
+    border: 4px solid #00cfff !important;
+}
+
+
+#open-product-composition-modal .close-icon {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    border: 2px solid #00cfff !important;
+    width: 30px !important;
+    background: #00cfff !important;
+    color: #fff !important;
+    z-index: 1;
+}
+
 /* MODAL VIDEO */
 #open-cta-modal .modal-content {
         position: relative;

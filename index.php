@@ -54,7 +54,7 @@ include_once("includes/banner-txt-by-date.php");
                 <div class="col-md-12">
                     <div class="video-wrapper video-border">
                         <div class="video-inner">
-                        <vturb-smartplayer id="vid-68cbe46bd30ddc125ecb093b" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/4a5b918c-a976-4f02-bd7f-e230b18b1475/players/68cbe46bd30ddc125ecb093b/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+                        <vturb-smartplayer id="vid-68e8c54bc98b7a8c52bb5f49" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
                         </div>
                     </div>
                 </div>
@@ -268,12 +268,12 @@ include_once("includes/banner-txt-by-date.php");
 
                     <ul class="nav nav-pills mb-3 custom-nav-box" id="pills-tab" role="tablist">
                         <li class="nav-item choiceBtn" role="presentation" data-qty="6">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <a class="nav-link " id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
 
                                 <div class="row pt-2">
                                     <div class="col-md-2 col-lg-1 col-2">
                                         <span class="empty-check empty1" style="display:none"></span>
-                                        <span class="filled-check fill1">
+                                        <span class="empty-check fill1">
                                             <i class="fa fa-check"></i>
                                         </span>
 
@@ -316,14 +316,10 @@ include_once("includes/banner-txt-by-date.php");
                             </a>
                         </li>
                         <li class="nav-item choiceBtn" role="presentation" data-qty="3">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
-
-
-
-
+                            <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
                                 <div class="row pt-2">
                                     <div class="col-md-2 col-lg-1 col-2">
-                                        <span class="empty-check empty2"></span>
+                                        <span class="filled-check empty2"></span>
                                         <span class="filled-check fill2" style="display:none">
                                             <i class=" fa fa-check">
                                             </i>
@@ -760,7 +756,7 @@ include_once("includes/banner-txt-by-date.php");
 
     <div class="container pricebox hidethis">
         <div class="row">
-            <div class="col-lg-4 col-12 mb-3 order-3 order-lg-0">
+            <div class="col-lg-4 col-12 mb-3 order-3 order-lg-1">
                 <div class="price-box left">
                     <div class="price_header">
                         <div class="pt-2"></div>
@@ -808,8 +804,61 @@ include_once("includes/banner-txt-by-date.php");
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 mb-3 col-lg-4 order-lg-2 highlighted">
+            
+            <div class="col-lg-4 col-12 mb-3 order-1 order-lg-2">
                 <div class="price-box middle">
+                    <div class="price_header">
+                        <div class="pt-2"></div>
+                        <h3 class="text-center pt-4 mb-0" style="font-size:40px;">
+                            <b class="bt-blue">3 Boîtes</b>
+                        </h3>
+                        <p class="text-center  mb-0 semi-b price_bottle" style="font-size:22px;">
+
+                            <span replace item="2" type="fe" parameter="days"></span> Cure de 90 Jours
+                        </p>
+                        <div class="price_product_box d-md-none d-block">
+                            <img src="assets/images/index2/HEPALIV_3_image.png" productimage="2" type="fe" class="d-block mx-auto img-fluid pl-2 px-2" style="max-height:256px;">
+                        </div>
+                    </div>
+                    <div class="card-product">
+                        <div class="price_product_box d-md-block d-none">
+                            <img loading="lazy" src="assets/images/index2/HEPALIV_3_image.png" productimage="2" type="fe" class="d-block mx-auto img-fluid pl-2 px-2" style="max-height:256px;">
+                        </div>
+                        <div class="py-md-3"></div>
+                        <h2 class="pricing-txt text-center">
+                            49€<span> / Boîte </span>
+                        </h2>
+                        <p class="text-center delivery-text pb-md-2 xs-0">
+                            + Livraison
+                        </p>
+
+                        <div class="py-2 d-md-none"></div>
+
+                        <div class="text-center">
+                            <a href="etape-2.php?choice=3" class="order-cart-button mb-md-3 btn-pager  d-block">
+                                AJOUTER AU PANIER
+                            </a>
+                        </div>
+                        <div class="card-section py-0 d-md-none d-block">
+                            <img loading="lazy" src="assets/images/img-credit-cards.jpg" class="img-fluid mx-auto d-block mb-0" style="width: 133px; max-width:256px;" alt="">
+                        </div>
+                        <p class="text-center mb-1 mt-1 mt-md-0 tprice" style="font-size:23px;">
+                            TOTAL:
+                            <span class="fi-price">207€</span>
+                            <b>
+                                147€<span replace item="2" type="fe" parameter="price"></span>
+                            </b>
+                        </p>
+                        <div class="card-section py-2 mb-4 d-md-block d-none">
+                            <img loading="lazy" src="assets/images/img-credit-cards.jpg" class="img-fluid mx-auto d-block mb-0" style="width: 133px; max-width:254px;" alt="">
+                        </div>
+                        <!--<p class="text-center medium mb-5">Livraison GRATUITE ! </p>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-12 mb-3 col-lg-4 order-2 order-lg-2">
+                <div class="price-box left">
                     <div class="price_header">
                         <div class="pt-2"></div>
                         <h3 class="text-center pt-4 mb-0" style="font-size:40px;">
@@ -857,57 +906,6 @@ include_once("includes/banner-txt-by-date.php");
                         </p>
                         <div class="card-section py-2 mb-4 d-md-block d-none">
                             <img loading="lazy" src="assets/images/img-credit-cards.jpg" class="img-fluid mx-auto d-block mb-0" style="width: 133px; max-width:256px;" alt="">
-                        </div>
-                        <!--<p class="text-center medium mb-5">Livraison GRATUITE ! </p>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-12 mb-3 order-2 order-lg-3">
-                <div class="price-box left">
-                    <div class="price_header">
-                        <div class="pt-2"></div>
-                        <h3 class="text-center pt-4 mb-0" style="font-size:40px;">
-                            <b class="bt-blue">3 Boîtes</b>
-                        </h3>
-                        <p class="text-center  mb-0 semi-b price_bottle" style="font-size:22px;">
-
-                            <span replace item="2" type="fe" parameter="days"></span> Cure de 90 Jours
-                        </p>
-                        <div class="price_product_box d-md-none d-block">
-                            <img src="assets/images/index2/HEPALIV_3_image.png" productimage="2" type="fe" class="d-block mx-auto img-fluid pl-2 px-2" style="max-height:256px;">
-                        </div>
-                    </div>
-                    <div class="card-product">
-                        <div class="price_product_box d-md-block d-none">
-                            <img loading="lazy" src="assets/images/index2/HEPALIV_3_image.png" productimage="2" type="fe" class="d-block mx-auto img-fluid pl-2 px-2" style="max-height:256px;">
-                        </div>
-                        <div class="py-md-3"></div>
-                        <h2 class="pricing-txt text-center">
-                            49€<span> / Boîte </span>
-                        </h2>
-                        <p class="text-center delivery-text pb-md-2 xs-0">
-                            + Livraison
-                        </p>
-
-                        <div class="py-2 d-md-none"></div>
-
-                        <div class="text-center">
-                            <a href="etape-2.php?choice=3" class="order-cart-button mb-md-3 btn-pager  d-block">
-                                AJOUTER AU PANIER
-                            </a>
-                        </div>
-                        <div class="card-section py-0 d-md-none d-block">
-                            <img loading="lazy" src="assets/images/img-credit-cards.jpg" class="img-fluid mx-auto d-block mb-0" style="width: 133px; max-width:256px;" alt="">
-                        </div>
-                        <p class="text-center mb-1 mt-1 mt-md-0 tprice" style="font-size:23px;">
-                            TOTAL:
-                            <span class="fi-price">207€</span>
-                            <b>
-                                147€<span replace item="2" type="fe" parameter="price"></span>
-                            </b>
-                        </p>
-                        <div class="card-section py-2 mb-4 d-md-block d-none">
-                            <img loading="lazy" src="assets/images/img-credit-cards.jpg" class="img-fluid mx-auto d-block mb-0" style="width: 133px; max-width:254px;" alt="">
                         </div>
                         <!--<p class="text-center medium mb-5">Livraison GRATUITE ! </p>-->
                     </div>
@@ -1413,8 +1411,15 @@ include_once("includes/banner-txt-by-date.php");
                             <li class="list-inline-item">
                                 <a href="https://www.nutrisolution.net/retours.php" target="_blank">Retours</a>
                             </li>
-                        
                         </ul>
+
+                        <div class="col-md-5 pt-5 mx-auto col-6">
+                            <div class="text-center">
+                                <a id="product-composition-trigger" class="btn btn-pager w-100">
+                                    VIEW PRODUCT COMPOSITION
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1451,6 +1456,21 @@ include_once("includes/banner-txt-by-date.php");
             </div>
         </div>
 
+        <!-- OPEN CTA MODAL -->
+        <div id="open-product-composition-modal" class="modal fade justify-content-center align-items-center" aria-modal="true">
+            <div class="modal-dialog modal-l1-main modal-lg">
+                <div class="modal-content">
+                    <button type="button" class="close close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+
+                    <div class="modal-body ps-0 pr-0 pt-4 p-0">
+                        <img class="w-100" src="assets/images/label.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- BUBBLE COMMENT -->
         <div id="bubble-comments-container" style=" opacity: 1; transform: translateX(-400px) translateY(0px);">
             <div class="d-flex text-white">
@@ -1478,9 +1498,25 @@ include_once("includes/banner-txt-by-date.php");
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="assets/js/vturb.js"></script>
         <script src="assets/js/timer-offer-pages.js"></script>
+
+        <!-- Dialog Trigger !-->
+        <script>
+            $('#product-composition-trigger').click(function () {
+                $('#open-product-composition-modal').modal('show');
+            });
+        </script>
+
+        <!--Video player !-->
+        <script type="text/javascript">
+            var s = document.createElement("script");
+            s.src = "https://scripts.converteai.net/4a5b918c-a976-4f02-bd7f-e230b18b1475/players/68e8c54bc98b7a8c52bb5f49/v4/player.js";
+            s.async = true;
+            document.head.appendChild(s);
+        </script>
+
         <script>
             // Offer BTN. 
-            let currentChoice = 6;
+            let currentChoice = 3;
             let choiceBtns = document.querySelectorAll('.choiceBtn');
             let offerBtn = document.querySelector('.offerBtn');
 

@@ -24,7 +24,7 @@ loadComments();
 * ========== CTA (hidethis) ==========
 **/
 document.addEventListener("DOMContentLoaded", function () {
-    const ctaTime = (60 * 35) + 55;
+    const ctaTime = 10;
     // const ctaTime = 6;
     const partOpenCta = new URLSearchParams(window.location.search).get('part');
     const hidethisEls = document.querySelectorAll(".hidethis");
@@ -52,14 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         let intervalCTA = setInterval(() => {
         const currentTime = parseInt(localStorage.getItem(`_currentTime-${storageKey}`), 10);
-
+        
         if (!isNaN(currentTime) && currentTime >= ctaTime) {
             showHideThis();
             clearInterval(intervalCTA);
             localStorage.setItem(`_isCtaOpen-${storageKey}`, "true");
             startTimer();
         }
-        }, 2000); 
+        }, 1000); 
     }
 });
 
